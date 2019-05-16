@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+    </ul>
+
+    <h1 style="font-size:10vw;">Test text</h1>
+ </body>
+
+<script>
+function konamiCode(cb) {
+  var input = '';
+  var key = '3838404037393739666513';
+  document.addEventListener('keydown', function (e) {
+    input += ("" + e.keyCode);
+    if (input === key) {
+      return cb();
+    }
+    if (!key.indexOf(input)) return;
+    input = ("" + e.keyCode);
+  });
+}
+
+konamiCode(function () {
+    document.body.style.backgroundImage = "url('https://i.imgur.com/NRb5jTh.jpg)";
+})
+
+
+</script>
+</html>
