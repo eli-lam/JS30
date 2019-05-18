@@ -1,39 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  </head>
+
+  <body>
     <ul>
-    <li><a class="active" href="#home">Home</a></li>
-    <li><a href="#news">News</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#about">About</a></li>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="#news">About</a></li>
+      <li><a href="#contact">Projects</a></li>
     </ul>
 
-    <h1 style="font-size:10vw;">Test text</h1>
- </body>
+    <div class="egg" id="container">
+      <canvas class="frog_particle" id="canvas"></canvas>
+    </div>
 
-<script>
-function konamiCode(cb) {
-  var input = '';
-  var key = '3838404037393739666513';
-  document.addEventListener('keydown', function (e) {
-    input += ("" + e.keyCode);
-    if (input === key) {
-      return cb();
-    }
-    if (!key.indexOf(input)) return;
-    input = ("" + e.keyCode);
-  });
-}
+    <div>
+      <img id="frog" src="./assets/frog.jpg" />
+    </div>
 
-konamiCode(function () {
-    document.body.style.backgroundImage = "url('https://i.imgur.com/NRb5jTh.jpg)";
-})
+    <div class="content">
+      <div> <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+         et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+         sunt in culpa qui officia deserunt mollit anim id est laborum.</h3></div>
+    </div>
 
-
-</script>
+    <script src="./js/vanilla-tilt.js"></script>
+    <script src="./js/eastereggs.js"></script>
+  </body>
 </html>
